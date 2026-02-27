@@ -32,6 +32,6 @@ The development pipeline is structured to progressively scale from basic kinemat
 * **Mechanism:** Resurrect legacy Novint Falcon drivers to interface with ROS 2, translating 3D Cartesian coordinates into spatial end-effector targets within the simulation.
 * **Implementation Note:** *Serves as the advanced hardware module for the Mercer Lab curriculum.*
 
-### Phase 3: High-Fidelity Surgical Simulation (Phantom Omni) 🌟
+### Phase 3: High-Fidelity Surgical Simulation (Phantom Omni)
 * **Objective:** Achieve 6-DOF teleoperation with active force reflection.
 * **Mechanism:** Deploy the Phantom Omni within a simulated hospital room environment. This phase requires programming virtual fixtures (walls) and soft-body physics (veins/tissue) in Isaac Sim, actively calculating and feeding resistance data back to the user's hand via the Omni's haptic motors.
