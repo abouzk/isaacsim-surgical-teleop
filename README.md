@@ -40,6 +40,10 @@ The development pipeline is structured to progressively scale from basic kinemat
 * **Objective:** Introduce active, variable force reflection mimicking human tissue.
 * **Mechanism:** Transition from rigid virtual walls to soft-body physics (veins/tissue) in Isaac Sim. Actively calculate elastic and dynamic resistance data based on tissue deformation and feed it back to the user's hand via the Omni's haptic motors.
 
-### Phase 5: Surgical Environment & Bioscanners
-* **Objective:** Finalize the hospital room digital twin data architecture.
-* **Mechanism:** Deploy independent ROS 2 nodes that simulate and publish patient telemetry (e.g., heart rate, tissue density alerts). Integrate these data streams into a centralized interface used during the teleoperated surgery simulation.
+### Phase 5: Autonomous Diagnostics & Surgical Environment (Isaac for Healthcare)
+* **Objective:** Finalize the hospital room digital twin and integrate volumetric diagnostic imaging.
+* **Mechanism:** Render a photorealistic, physically accurate hospital environment utilizing Omniverse RTX. Simulate the kinematics of a virtual Computed Tomography (CT) scanner to evaluate patient anatomy. Utilize NVIDIA's MAISI (Medical AI and Simulation Infrastructure) to generate and process synthetic 3D CT volumes, allowing the system to actively identify and segment anatomical anomalies (e.g., tumors) for targeted teleoperated surgical removal.
+
+### Phase 6: Targeted Intervention & Teleoperated Resection
+* **Objective:** Execute a closed-loop surgical task utilizing the complete hardware and software pipeline.
+* **Mechanism:** Combine the 6-DOF haptic force-reflection (Phase 4) with the diagnostic telemetry (Phase 5). The operator utilizes the Phantom Omni to navigate the virtual end-effector to the segmented anomaly. The simulation tracks instrument trajectory, applied force, and tissue deformation to calculate a "success metric" for the simulated tumor resection, ensuring healthy surrounding tissue is not compromised.
