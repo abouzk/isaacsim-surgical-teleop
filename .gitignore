@@ -2,8 +2,6 @@
 build/
 install/
 log/
-test/
-resource/
 
 # Python Cache
 __pycache__/
