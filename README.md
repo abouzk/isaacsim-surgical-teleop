@@ -22,7 +22,7 @@ The development pipeline is structured to progressively scale from basic kinemat
 * **Objective:** Establish and verify the baseline network connection between the ROS 2 host and the Isaac Sim environment.
 * **Mechanism:** Utilize standard `teleop_twist_keyboard` nodes to drive the digital twin's end-effector, ensuring the native inverse kinematics solvers (Lula) are functioning without hardware driver interference.
 
-### Phase 1: Gamepad Integration (Xbox Controller)
+### Phase 1: Gamepad Integration (Standard Controller)
 * **Objective:** Introduce external USB hardware teleoperation.
 * **Mechanism:** Map standard 2D joystick axes to the ROS 2 `/cmd_vel` topic utilizing the `joy` package.
 * **Implementation Note:** The documentation and deployment of this phase currently serve as the highly scalable introductory robotics module for Mercer Lab students.
