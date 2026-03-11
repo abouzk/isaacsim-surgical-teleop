@@ -1,4 +1,4 @@
-# Medical Robotics Digital Twin: Simulation & Haptics
+# Surgical Digital Twins & Haptic Teleoperation (ROS2/Isaac Sim)
 
 **Context:** Independent Research & Mercer XLab Core Infrastructure
 **Status:** Architecture & Requirements Definition (Active Development)
