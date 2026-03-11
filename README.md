@@ -47,3 +47,10 @@ The development pipeline is structured to progressively scale from basic kinemat
 ### Phase 6: Targeted Intervention & Teleoperated Resection
 * **Objective:** Execute a closed-loop surgical task utilizing the complete hardware and software pipeline.
 * **Mechanism:** Combine the 6-DOF haptic force-reflection (Phase 4) with the diagnostic telemetry (Phase 5). The operator utilizes the Phantom Omni to navigate the virtual end-effector to the segmented anomaly. The simulation tracks instrument trajectory, applied force, and tissue deformation to calculate a "success metric" for the simulated tumor resection, ensuring healthy surrounding tissue is not compromised.
+
+---
+
+## 📓 Documentation & Architecture Logs
+The day-to-day architectural decisions, constraint analyses (e.g., legacy driver integration, ROS 2 latency), and sprint logs for this digital twin are maintained in my central systems-engineering repository. 
+
+* **[View the Architectural Logs for the Isaac Sim Digital Twin Here](https://github.com/abouzk/systems-engineering-notebook/blob/main/logs/isaacsim-surgical-teleop-log.md)**
