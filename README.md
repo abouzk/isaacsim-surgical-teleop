@@ -5,6 +5,8 @@
 **Timeline:** Jan 2026 – May 2026
 
 ## Project Overview
+NOTE: Parts of this repository are being pslit into smaller, more focues repositories for easier use and readability. This will contain the foundationa IsaacSim teleop packages.
+
 This repository contains the architecture and ROS 2 packages for a high-fidelity digital twin focused on surgical robotics. Built using NVIDIA Isaac Sim and ROS 2 Humble, the primary objective is to create a safe, simulated testbed for medical teleoperation. This environment bridges the gap between theoretical kinematics and real-time hardware control, allowing for the rapid integration and testing of varied haptic feedback devices.
 
 Because the system is designed with a highly modular, hardware-agnostic architecture, the foundational hardware-integration phases (Phases 0–2) will be adopted as official educational robotics modules for the RPI Mercer XLab.
